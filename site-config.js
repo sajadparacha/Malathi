@@ -1,155 +1,188 @@
 window.siteConfig = {
   site: {
     name: '"Licorise Extract" LLC',
-    tagline: "Natural licorice extract products for food, pharmaceutical, and confectionery industries.",
     language: "en",
-    logoText: "LE",
-    ctaPrimary: "Explore Products",
-    ctaSecondary: "Request a Quote",
-    contactEmail: "info@licext.example",
-    contactPhone: "+998 00 000 00 00",
-    address: "Tashkent, Uzbekistan"
+    assetBaseUrl: "https://licext.com",
+    logo: "https://licext.com/logo/logo4.png",
+    favicon: "https://licext.com/favicon.png",
+    copyrightStartYear: "2013",
+    developedByLabel: "Developed by",
+    developedByName: "PROACTIVE MEDIA",
+    developedByHref: "https://proactive.uz"
   },
 
-  navigation: [
-    { label: "Home", href: "#home" },
-    { label: "Objectives", href: "#objectives" },
-    { label: "Products", href: "#products" },
-    { label: "News", href: "#news" },
-    { label: "Certificates", href: "#certificates" },
-    { label: "Contacts", href: "#contacts" }
+  socialLinks: [
+    {
+      label: "Facebook",
+      icon: "fa-facebook",
+      href: "https://www.facebook.com/licoriceextract/?ref=aymt_homepage_panel"
+    },
+    {
+      label: "Instagram",
+      icon: "fa-instagram",
+      href: "https://www.instagram.com/licorice_extract_llc/"
+    },
+    {
+      label: "LinkedIn",
+      icon: "fa-linkedin",
+      href: "https://www.linkedin.com/company/15189924?trk=tyah&trkInfo=clickedVertical:company,clickedEntityId:15189924,idx:2-1-2,tarId:1487137322615,tas:licorice extract"
+    },
+    { label: "YouTube", icon: "fa-youtube-play", href: "#" },
+    { label: "Skype", icon: "fa-skype", href: "skype:" }
   ],
 
-  hero: {
-    eyebrow: "Reliable exporter from Uzbekistan",
-    title: "Pure licorice extract with consistent quality and dependable supply.",
-    description:
-      "A modern company profile website inspired by Licext: clean sections, product-focused messaging, certificates, and simple ordering information.",
-    highlights: ["Organic-focused sourcing", "Quality management", "International partnership"],
-    imageAlt: "Licorice roots and extract product presentation"
+  navigation: [
+    { label: "Home", href: "/en/" },
+    { label: "About us", href: "/en/about" },
+    { label: "Products", href: "/en/products" },
+    { label: "FAQ", href: "/en/faq" },
+    { label: "News", href: "/en/news/article" },
+    { label: "Contacts", href: "/en/contacts" }
+  ],
+
+  search: {
+    action: "/en/search",
+    inputName: "LicextSearch[search]",
+    maxLength: 25,
+    placeholder: ""
   },
 
-  objectives: {
-    title: "Objectives",
-    subtitle: "We focus on quality, technology, partnership, range, organic products, and easy ordering.",
-    items: [
+  languageSwitch: {
+    label: "ru",
+    href: "/ru/"
+  },
+
+  slider: {
+    images: [
       {
-        title: "High Quality",
-        text: "Careful raw-material selection and controlled production help deliver stable product quality.",
-        icon: "quality"
+        href: "#",
+        src: "https://licext.com/app_images/index_slider/1/sl1_en_1200x600.png",
+        alt: "Licorice Extract slide 1"
       },
       {
-        title: "Modern Technologie",
-        text: "Production processes are organized around modern equipment and practical quality standards.",
-        icon: "technology"
+        href: "#",
+        src: "https://licext.com/app_images/index_slider/1/sl2_en_1200x600.png",
+        alt: "Licorice Extract slide 2"
       },
       {
-        title: "Reliable Partnership",
-        text: "Long-term cooperation, clear communication, and timely deliveries are central to our work.",
-        icon: "partnership"
+        href: "#",
+        src: "https://licext.com/app_images/index_slider/1/sl3_en_1200x600.png",
+        alt: "Licorice Extract slide 3"
       },
       {
-        title: "Great range",
-        text: "A broad product selection supports customers in food, beverage, cosmetic, and pharmaceutical markets.",
-        icon: "range"
-      },
-      {
-        title: "Organic products",
-        text: "Natural ingredients and responsible sourcing practices support cleaner product development.",
-        icon: "organic"
-      },
-      {
-        title: "Easy to order",
-        text: "Send an inquiry, confirm product requirements, and receive a prompt commercial response.",
-        icon: "order"
+        href: "#",
+        src: "https://licext.com/app_images/index_slider/1/sl4_en_1200x600.png",
+        alt: "Licorice Extract slide 4"
       }
     ]
   },
 
-  products: {
-    title: "Product Range",
-    subtitle: "Configure product names, descriptions, and badges here as your offer changes.",
+  objectives: {
+    title: "Objectives",
     items: [
-      {
-        name: "Licorice Extract Block",
-        description: "Dense extract blocks suitable for industrial use and further processing.",
-        badge: "Export ready"
-      },
-      {
-        name: "Licorice Extract Powder",
-        description: "Fine powder format designed for easy blending and consistent dosing.",
-        badge: "Popular"
-      },
-      {
-        name: "Licorice Root",
-        description: "Selected dried licorice roots prepared for extraction and wholesale supply.",
-        badge: "Natural"
-      }
+      { title: "High Quality", icon: "fa-line-chart", className: "obj-h2" },
+      { title: "Modern Technologie", icon: "fa-cogs" },
+      { title: "Reliable Partnership", icon: "fa-handshake-o" },
+      { title: "Great range", icon: "fa-bullhorn", className: "obj-h2" },
+      { title: "Organic products", icon: "fa-leaf" },
+      { title: "Easy to order", icon: "fa-cloud-download", className: "obj-h2" }
     ]
   },
 
   news: {
     title: "News",
-    subtitle: "Latest company announcements and certification updates.",
     items: [
       {
         title: "Halal certificate",
-        date: "Company update",
-        excerpt: "Good day, dear friends! We successfully received an updated Halal certificate for our products."
+        href: "/en/site/feed-item?alias=halal-certificate-2",
+        image: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles325&dirtyAlias=d5f1e6b1ee-1_100x70.png",
+        excerpt: "Good day, dear friends!\n\n\nWe successfully..."
       },
       {
         title: "License CCI",
-        date: "Partner notice",
-        excerpt: "Dear partners! We would like to inform you about our Chamber of Commerce and Industry license."
+        href: "/en/site/feed-item?alias=license-cci",
+        image: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles298&dirtyAlias=d3d9f507db-1_100x70.jpg",
+        excerpt: "Dear partners! We would like to inform you..."
       },
       {
         title: "ISO 22000",
-        date: "Quality system",
-        excerpt: 'Company "Licorice Extract" LLC has confirmed food-safety management compliance.'
+        href: "/en/site/feed-item?alias=iso-22000-2",
+        image: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles286&dirtyAlias=7bd5be09a8-1_100x70.jpg",
+        excerpt: "Company «Licorice Extract» LLC has..."
       }
     ]
   },
 
   certificates: {
     title: "Certificates",
-    subtitle:
-      "Add certificate links, validation notes, and quality documents to build trust with buyers.",
-    validationNote:
-      "You can check certificate validity on the issuing organization's website using the company name or certificate number.",
     items: [
       {
-        title: "The Chamber of Commerce and Industry of the Republic of Uzbekistan",
-        description: "Company registration and trade documentation.",
-        href: "#"
+        title: "Halal certificate",
+        fullImage: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles322&dirtyAlias=35d7d74955-1_900x1200.jpg",
+        thumb: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles322&dirtyAlias=35d7d74955-1_300x400.jpg"
+      },
+      {
+        title: "ISO/TS 22002-1:2009 rus",
+        fullImage: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles303&dirtyAlias=981ca286a8-1_900x1200.jpg",
+        thumb: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles303&dirtyAlias=981ca286a8-1_300x400.jpg"
+      },
+      {
+        title: "The Chamber of Commerce and Industry of the Rupublic Uzbekistan",
+        fullImage: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles300&dirtyAlias=8dccd2896c-1_900x1200.jpg",
+        thumb: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles300&dirtyAlias=8dccd2896c-1_300x400.jpg"
+      },
+      {
+        title: "ISO/TS 22002-1:2009",
+        fullImage: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles297&dirtyAlias=e9fdaea913-1_900x1200.jpg",
+        thumb: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles297&dirtyAlias=e9fdaea913-1_300x400.jpg"
+      },
+      {
+        title: "ISO 22000:2005 FSMS rus",
+        fullImage: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles294&dirtyAlias=173d9381ef-1_900x1200.jpg",
+        thumb: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles294&dirtyAlias=173d9381ef-1_300x400.jpg"
       },
       {
         title: "ISO 22000:2005 FSMS",
-        description: "Food-safety management system certification.",
-        href: "#"
-      },
-      {
-        title: "Halal Certificate",
-        description: "Product compliance certificate for Halal-sensitive markets.",
-        href: "#"
+        fullImage: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles293&dirtyAlias=fa78b250f4-1_900x1200.jpg",
+        thumb: "https://licext.com/en/yii2images/images/image-by-item-and-alias?item=Articles293&dirtyAlias=fa78b250f4-1_300x400.jpg"
       }
-    ]
-  },
-
-  contact: {
-    title: "Easy to order",
-    subtitle: "Tell us the product, volume, destination, and documentation requirements.",
-    fieldsTitle: "Inquiry checklist",
-    checklist: [
-      "Product type and specification",
-      "Required quantity and packaging",
-      "Destination country and delivery terms",
-      "Certificates or lab documents needed"
     ],
-    buttonLabel: "Send inquiry"
+    validationHtml:
+      'Also, you can check the validity of our certificates ISO 22000: 2005 and FSMS ISO / TS 22002-1: 2009 on the website: <a href="http://www.astraia.sk/index.php?page=certificate-search-en">http://www.astraia.sk/index.php?page=certificate-search-en</a>',
+    searchInstruction:
+      "Only you have to write on the website in search, the name of our company LLC Licorice Extract or certificate number."
   },
 
-  footer: {
-    copyright: "All rights reserved.",
-    note: "This clone-style demo keeps content in one configuration file for easy editing."
-  }
+  bottomWidgets: [
+    {
+      title: "Company",
+      links: [
+        { label: "About us", href: "http://licext.com/en/about" },
+        { label: "Meet the Team", href: "http://licext.com/en/team" },
+        { label: "Contacts", href: "http://licext.com/en/contacts" }
+      ]
+    },
+    {
+      title: "Support",
+      links: [
+        { label: "FAQ", href: "http://licext.com/en/faq" },
+        { label: "News", href: "http://licext.com/en/news/article" }
+      ]
+    },
+    {
+      title: "Products",
+      links: [
+        { label: "Spray-Dried Powder", href: "http://licext.com/en/products#prdct1" },
+        { label: "Pasta", href: "http://licext.com/en/products#0" },
+        { label: "Crude Glycyrrhizinic Acid", href: "http://licext.com/en/products#0" }
+      ]
+    },
+    {
+      title: "Our Partners",
+      links: [
+        { label: '"Olmaliq KMK" AJ', href: "http://www.agmk.uz/index.php/uz/" },
+        { label: "ORION SKORPION ООО", href: "http://krasotaplus.com/" }
+      ]
+    }
+  ]
 };
