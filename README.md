@@ -22,3 +22,20 @@ python3 -m http.server 4173
 ```
 
 Then visit `http://localhost:4173`.
+
+## Publish on GitHub Pages
+
+The repository includes `.github/workflows/pages.yml`, which deploys the static site to GitHub Pages whenever changes are pushed to `main`.
+
+To activate publishing in GitHub:
+
+1. Open the repository settings.
+2. Go to **Pages**.
+3. Set **Source** to **GitHub Actions**.
+4. Merge changes to `main` or run the workflow manually from the **Actions** tab.
+
+After the first successful deployment, the site will be available at:
+
+```text
+https://sajadparacha.github.io/Malathi/
+```
